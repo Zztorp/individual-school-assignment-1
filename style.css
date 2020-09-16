@@ -1,0 +1,39 @@
+* { 
+    border:1px solid black; 
+}
+ 
+aside p {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: orange;
+}
+
+
+.flex_container{
+    display: flex;
+
+}
+
+article {
+    color: orange;
+    
+}
+.nav_container{
+    display: flex;
+    color: orchid;
+
+}  
+.content_container{
+
+}
+.img_container{
+
+}
+.form_container{
+
+}
+
+
