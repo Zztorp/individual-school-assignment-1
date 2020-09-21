@@ -1,6 +1,11 @@
 * { 
     border:1px solid black; 
 }
+body{
+    font-family: Orbitron;
+    font-weight: 100;
+    margin: 0px;
+}
  
 aside p {
     width: 30%;
@@ -10,7 +15,10 @@ aside p {
     font-style: italic;
     background-color: orange;
 }
+h1{
+    justify-content: center;
 
+}
 
 .flex_container{
     display: flex;
@@ -22,6 +30,7 @@ article {
     
 }
 nav{
+    justify-content: center;
     display: flex;
     color: orchid;
 
