@@ -1,10 +1,12 @@
-* { 
+/** { 
     border:1px solid black; 
-}
+}*/
 body{
     font-family: Orbitron;
-    font-weight: 100;
-    margin: 0px;
+    padding: 2%;
+    
+    /*background-color: black;*/
+
 }
  
 aside p {
@@ -16,12 +18,24 @@ aside p {
     background-color: orange;
 }
 h1{
-    justify-content: center;
+    text-align: center;
 
 }
 
 .flex_container{
     display: flex;
+    justify-content: space-around;
+        text-align: center;
+
+    
+
+
+}
+.nav_style{
+}
+.nav_style :hover{
+  background-image: url('https://cdn.discordapp.com/attachments/749985626933166155/757569710404665414/coollogo_com-201121081.png');
+    display: block;
 
 }
 
@@ -31,11 +45,13 @@ article {
 }
 nav{
     justify-content: center;
+    justify-content: space-around; /*Luft mellan nav-texterna*/
     display: flex;
-    color: orchid;
 
 }  
-.content_container{
+
+.content_container {
+    
 
 }
 .img_container{

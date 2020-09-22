@@ -12,3 +12,10 @@ I've noticed that if you do not have a good HTML-foundation, CSS can become a li
 Hope you enjoy!
 
 // ZZ
+
+links to inspiration / help that I used for this school assignment:
+
+Text: 
+
+
+
