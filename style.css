@@ -3,7 +3,9 @@
 * { 
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*För responsivitet*/
+    list-style: none;
+
 }
 body{
     font-family: Orbitron;
@@ -21,16 +23,31 @@ header {
     margin: 50px 0px 0px 0px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 nav{    
-    justify-content: center;
-    justify-content: space-around; /*Luft mellan nav-texterna*/
-    display: flex;
+    justify-content: left;
     width: 90%;
     margin: auto; /*Så att du får lika mycket space på höger o vänster sida i nav*/
 
 } 
+.nav-links{
+    position: fixed;
+    background-color: lawngreen;
+    width: 300px;
+    height: 30%;
+    
+}
+.nav-link{
+    padding: 0%;
+    cursor: pointer;
+
+}
+ul li{
+   
+}
 .welcome-text{
+    height: 100%;
     margin: 50px 0px 0px 0px;
 }
 .content_container{
@@ -45,16 +62,9 @@ nav{
     height: 25vh;
 
 }
-.nav-links , .welcome-text {
+.welcome-text {
     display: flex;
     justify-content: space-around;
-    list-style: none;
-}
-.nav-link{
-    margin: 40px;
-    padding: 0%;
-    cursor: pointer;
-
 }
 .img_container img{
   width: 450px;
@@ -63,6 +73,53 @@ nav{
   
 }
 
+.content_img img{
+      animation: drop 1.5s ease;
+
+}
+
+/*****************  RESPONSIVITET ***********************/
+
+@keyframes drop{
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1270px){
+    .welcome-text{
+        flex-direction: column;
+    }
+    .welcome-text img{
+        width: 100%; /*så texten behåller sin naturliga*/
+
+    }
+}
+@media screen and (max-width: 1200px){
+        .nav-links{
+        margin-top: 0vh;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px){
+        .nav-links{
+        margin-top: 0vh;
+        flex-shrink: 1;
+    }
+}
+
+
+
+
+
+
+/****************************************/
 .blink {
         animation: blinker 0.6s linear infinite;
         color: #1c87c9;
