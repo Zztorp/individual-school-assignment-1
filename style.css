@@ -33,7 +33,6 @@ nav{
 } 
 .nav-links{
     position: fixed;
-    background-color: lawngreen;
     width: 300px;
     height: 30%;
     
@@ -57,10 +56,24 @@ ul li{
     margin: auto;
     min-height: 80vh;
     align-items: center;
+    
 }
 .content_img img{
-    height: 25vh;
+    flex-direction: column;
+    
 
+}
+.planet1 img{
+    width: 265px !important;
+    height: 265px !important; 
+}
+.planet2 img{
+    width: 299px;
+    height: 310px;
+}
+.planet3 img{
+    width: 350px;
+    height: 363px;
 }
 .welcome-text {
     display: flex;
