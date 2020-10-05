@@ -4,6 +4,7 @@
   padding: 0px;
   box-sizing: border-box; /*För responsivitet*/
   list-style: none;
+  color: ghostwhite;
 }
 body {
   font-family: Orbitron;
@@ -29,6 +30,7 @@ nav {
   width: 98%;
   margin: auto; /*Så att du får lika mycket space på höger o vänster sida i nav*/
 }
+
 /*****************  RESPONSIVITET ***********************/
 
 .container {
@@ -52,8 +54,9 @@ nav {
 }
 
 .footer {
-  background: rgba(44, 62, 80, 0.7);
-  height: 80px;
+  text-align: center;
+  height: 50px;
+  margin-top: 300px;
 }
 
 .article {
@@ -69,6 +72,14 @@ nav {
 
 .aside2 {
   background: rgba(44, 62, 80, 0.7);
+}
+.chatbot textarea {
+  color: black;
+  height: 100px;
+  width: 330px;
+}
+.chatbot input {
+  color: black;
 }
 
 @media all and (min-width: 800px) {

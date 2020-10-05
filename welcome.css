@@ -4,6 +4,7 @@
   padding: 0px;
   box-sizing: border-box; /*För responsivitet*/
   list-style: none;
+  color: ghostwhite;
 }
 body {
   font-family: Orbitron;
@@ -24,10 +25,14 @@ header {
   position: relative;
 }
 nav {
+  flex-direction: ;
   display: flex;
   justify-content: space-between;
   width: 98%;
   margin: auto; /*Så att du får lika mycket space på höger o vänster sida i nav*/
+}
+
+.nav-link {
 }
 /*****************  RESPONSIVITET ***********************/
 
@@ -52,8 +57,9 @@ nav {
 }
 
 .footer {
-  background: rgba(44, 62, 80, 0.7);
-  height: 80px;
+  text-align: center;
+  height: 50px;
+  margin-top: 300px;
 }
 
 .article {
@@ -70,45 +76,6 @@ nav {
 .aside2 {
   background: rgba(44, 62, 80, 0.7);
 }
-
-@media all and (min-width: 800px) {
-  .article {
-    flex: 3;
-  }
-  .aside1 {
-    order: 1;
-  }
-  .aside2 {
-    order: 2;
-  }
-  .article {
-    order: 2;
-  }
-  .footer {
-    order: 4;
-  }
-}
-
-@media all and (min-width: 600px) {
-  .aside {
-    flex: 1;
-  }
-}
-
-/********************** index.html CSS ***************************/
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box; /*För responsivitet*/
-  list-style: none;
-}
-/*body {
-  font-family: Orbitron;
-  background-color: black;
-  background-image: url("https://cdn.discordapp.com/attachments/749985626933166155/758039874241822760/pinkNblue.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 
 .welcome-text {
   display: flex;

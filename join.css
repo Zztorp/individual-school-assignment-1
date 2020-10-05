@@ -4,6 +4,7 @@
   padding: 0px;
   box-sizing: border-box; /*För responsivitet*/
   list-style: none;
+  color: ghostwhite;
 }
 body {
   font-family: Orbitron;
@@ -50,8 +51,9 @@ nav {
 }
 
 .footer {
-  background: rgba(44, 62, 80, 0.7);
-  height: 80px;
+  text-align: center;
+  height: 50px;
+  margin-top: 300px;
 }
 
 .article {

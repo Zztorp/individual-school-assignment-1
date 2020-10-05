@@ -4,6 +4,7 @@
   padding: 0px;
   box-sizing: border-box; /*För responsivitet*/
   list-style: none;
+  color: ghostwhite;
 }
 body {
   font-family: Orbitron;
@@ -11,8 +12,10 @@ body {
   background-image: url("https://cdn.discordapp.com/attachments/749985626933166155/758039874241822760/pinkNblue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
-h1 {
+h1,
+h5 {
   text-align: center;
 }
 header {
@@ -52,13 +55,13 @@ nav {
 }
 
 .footer {
-  background: rgba(44, 62, 80, 0.7);
-  height: 80px;
+  text-align: center;
+  height: 50px;
+  margin-top: 300px;
 }
 
 .article {
   text-align: left;
-  background: rgba(44, 62, 80, 0.7);
   height: 300px;
   font-size: 24px;
 }
