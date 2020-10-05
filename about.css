@@ -29,8 +29,6 @@ nav {
   width: 98%;
   margin: auto; /*Så att du får lika mycket space på höger o vänster sida i nav*/
 }
-/*****************  RESPONSIVITET ***********************/
-
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -57,7 +55,7 @@ nav {
 }
 
 .article {
-  text-align: left;
+  text-align: center;
   background: rgba(44, 62, 80, 0.7);
   height: 300px;
   font-size: 24px;

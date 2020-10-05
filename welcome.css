@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*För responsivitet*/
+  list-style: none;
+}
+body {
+  font-family: Orbitron;
+  background-color: black;
+  background-image: url("https://cdn.discordapp.com/attachments/749985626933166155/758039874241822760/pinkNblue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+}
+header {
+  display: flex;
+  height: 10vh;
+  margin: 50px 0px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: auto; /*Så att du får lika mycket space på höger o vänster sida i nav*/
+}
+/*****************  RESPONSIVITET ***********************/
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.container > * {
+  /*Detta betyder att alla element i conatiner klassen ska ha de här värderna*/
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
+.logo {
+  text-align: left;
+  width: 500px;
+}
+.header {
+  height: 200px;
+}
+
+.footer {
+  background: rgba(44, 62, 80, 0.7);
+  height: 80px;
+}
+
+.article {
+  text-align: left;
+  background: rgba(44, 62, 80, 0.7);
+  height: 300px;
+  font-size: 24px;
+}
+
+.aside1 {
+  background: rgba(44, 62, 80, 0.7);
+}
+
+.aside2 {
+  background: rgba(44, 62, 80, 0.7);
+}
+
+@media all and (min-width: 800px) {
+  .article {
+    flex: 3;
+  }
+  .aside1 {
+    order: 1;
+  }
+  .aside2 {
+    order: 2;
+  }
+  .article {
+    order: 2;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+  }
+}
+
+/********************** index.html CSS ***************************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*För responsivitet*/
+  list-style: none;
+}
+/*body {
+  font-family: Orbitron;
+  background-color: black;
+  background-image: url("https://cdn.discordapp.com/attachments/749985626933166155/758039874241822760/pinkNblue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+.welcome-text {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin: 50px 0px 0px 0px;
+}
+
+.content_container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+.content_img img {
+  flex-direction: column;
+  animation: drop 1.5s ease;
+}
+.planet1 img {
+  /*Här behövde jag gå in i varje bild och fixa så planeterna blir lika stora då dom har olika */
+  width: 265px;
+  height: 265px;
+  margin: 35px;
+}
+.planet2 img {
+  width: 299px;
+  height: 325px;
+}
+.planet3 img {
+  width: 350px;
+  height: 363px;
+}
+.img_container img {
+  width: 450px;
+  margin: 5px;
+  height: 400px;
+}
+
+/*****************  RESPONSIVITET ***********************/
+
+/*Drop animation på img*/
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .welcome-text {
+    flex-direction: column;
+  }
+  .welcome-text img {
+    width: 100%; /*så welcome-text texten behåller sitt utgångsläge*/
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    margin-top: 0vh;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-links {
+    margin-top: 0vh;
+    flex-shrink: 1;
+  }
+}
