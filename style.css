@@ -14,10 +14,6 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-h1,
-h5 {
-  text-align: center;
-}
 header {
   display: flex;
   height: 10vh;
@@ -56,22 +52,21 @@ nav {
 
 .footer {
   text-align: center;
-  height: 50px;
+  height: 40px;
   margin-top: 300px;
+  background: rgba(44, 62, 80, 0.7);
 }
 
 .article {
-  text-align: left;
+  text-align: center;
   height: 300px;
   font-size: 24px;
 }
 
 .aside1 {
-  background: rgba(44, 62, 80, 0.7);
 }
 
 .aside2 {
-  background: rgba(44, 62, 80, 0.7);
 }
 
 @media all and (min-width: 800px) {
@@ -96,4 +91,49 @@ nav {
   .aside {
     flex: 1;
   }
+}
+
+/****** BUTTON STYLE *******/
+
+/*
+  This is where we define the fill, color, thickness,
+  and stroke pattern of the SVG when there is no hover.
+  The dasharray and offset together define the line position
+  under the words. Here's also where the transition speed is set.
+*/
+
+#shape {
+  stroke-width: 3px;
+  fill: transparent;
+  stroke: #082f70;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 0.6s all ease;
+}
+/* 
+    Pushing the text up into the SVG. Without this the
+    text would be below the div's.
+*/
+
+#text {
+  margin-top: -43px;
+  text-align: center;
+}
+
+#text a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-weight: 150;
+  font-size: 1.1em;
+}
+/* 
+    Changing the shape on hover. I change the color of the stroke,
+make it thinner, then set it to again wrap around the entire parent element.
+*/
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #f72585;
 }

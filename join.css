@@ -52,8 +52,9 @@ nav {
 
 .footer {
   text-align: center;
-  height: 50px;
+  height: 40px;
   margin-top: 300px;
+  background: rgba(44, 62, 80, 0.7);
 }
 
 .article {
@@ -98,4 +99,43 @@ nav {
 p {
   color: ghostwhite;
   background: rgba(44, 62, 80, 0.7);
+}
+.vr-girl {
+  height: 400px;
+  width: 400px;
+}
+#shape {
+  stroke-width: 3px;
+  fill: transparent;
+  stroke: #082f70;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 0.6s all ease;
+}
+/* 
+    Pushing the text up into the SVG. Without this the
+    text would be below the div's.
+*/
+
+#text {
+  margin-top: -43px;
+  text-align: center;
+}
+
+#text a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-weight: 150;
+  font-size: 2em;
+}
+/* 
+    Changing the shape on hover. I change the color of the stroke,
+make it thinner, then set it to again wrap around the entire parent element.
+*/
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #f72585;
 }
