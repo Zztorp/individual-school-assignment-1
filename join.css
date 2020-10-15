@@ -46,8 +46,12 @@ nav {
   text-align: left;
   width: 500px;
 }
+.home-logo {
+  height: 80px;
+  width: 80px;
+}
 .header {
-  height: 200px;
+  height: 250px;
 }
 
 .footer {
@@ -59,17 +63,14 @@ nav {
 
 .article {
   text-align: center;
-  background: rgba(44, 62, 80, 0.7);
   height: 300px;
   font-size: 24px;
 }
 
 .aside1 {
-  background: rgba(44, 62, 80, 0.7);
 }
 
 .aside2 {
-  background: rgba(44, 62, 80, 0.7);
 }
 
 @media all and (min-width: 800px) {
@@ -96,15 +97,20 @@ nav {
   }
 }
 
-p {
-  color: ghostwhite;
-  background: rgba(44, 62, 80, 0.7);
+@media screen and (max-width: 600px) {
+  div.logo {
+    display: none;
+  }
+  .header nav {
+    justify-content: center;
+    height: 90px;
+    margin-top: 30px;
+    padding: 70px;
+  }
 }
-.vr-girl {
-  height: 400px;
-  width: 400px;
-}
-#shape {
+
+#shape,
+#shape2 {
   stroke-width: 3px;
   fill: transparent;
   stroke: #082f70;
@@ -117,23 +123,25 @@ p {
     text would be below the div's.
 */
 
-#text {
+#text,
+#text2 {
   margin-top: -43px;
   text-align: center;
 }
 
-#text a {
+#text a,
+#text2 a {
   color: ghostwhite;
   text-decoration: none;
-  font-weight: 150;
-  font-size: 2em;
+  font-size: 1em;
 }
 /* 
     Changing the shape on hover. I change the color of the stroke,
 make it thinner, then set it to again wrap around the entire parent element.
 */
 
-.svg-wrapper:hover #shape {
+.svg-wrapper:hover #shape,
+.svg-wrapper:hover #shape2 {
   stroke-dasharray: 50 0;
   stroke-width: 3px;
   stroke-dashoffset: 0;

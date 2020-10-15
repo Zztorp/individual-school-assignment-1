@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="join.css" />
-
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/749985626933166155/760512455817691196/3e101abe-c298-44bf-8b83-f285962f8055_200x200.png">
+  <script src="script.js"></script>
   <title>Join</title>
 </head>
 
@@ -14,15 +15,19 @@
       <nav>
         <div class="logo">
           <a href="/index.html">
-            <img
-              src="https://cdn.discordapp.com/attachments/749985626933166155/760512455817691196/3e101abe-c298-44bf-8b83-f285962f8055_200x200.png"
+            <img src="https://cdn.discordapp.com/attachments/749985626933166155/760512455817691196/3e101abe-c298-44bf-8b83-f285962f8055_200x200.png"
               alt="img missing" />
+          </a>
         </div>
         <ul class="nav-links">
+         <li class="nav-link">
+          <a href="index.html">
+            <img class="home-logo" src="https://cdn.discordapp.com/attachments/749985626933166155/758698258104582214/1310021474662706719113093-glowing-purple-neon-icon-business-home5pink-hi.png" alt="img missing">
+          </a>
+          </li>
           <li class="nav-link">
             <a href="about.html">ABOUT</a>
           </li>
-
           <li class="nav-link">
             <a href="join.html">Sign In / Join </a>
           </li>
@@ -30,46 +35,65 @@
       </nav>
     </header>
     <article class="article">
-      <div class="join-container">
        <h2>JOIN</h2>
        <p>
-        For a full experience, join us and get
-        the opportunity to enter other worlds with world-class
-        experiences. Sign up and Open the door to a new world.
+        For a magical experience, join us and get
+        the opportunity to enter awesome worlds. Sign up and Open the door to a new world.
         </p>
+        <br>
+        <div class="join-container">
         <form>
           <input type="text" name="username" placeholder="Username" />
+          <br>
           <input type="email" name="email" placeholder="Email" />
-          <input type="password" name="pass" placeholder="Password" />
-          
-          <a href="welcome.html"><input type="button" value="Sign Up" /></a>
+          <br>
+          <input type="password" name="pass" placeholder="Password" />                   
+          <!--<a href="welcome.html"><input type="button" value="Sign Up" /></a>-->
         </form>
       </div>
+      <br>
+      <div id="workarea">
+        <div class="position">
+           <div class="svg-wrapper">
+             <svg height="40" width="150">
+               <rect id="shape" height="40" width="150" />
+             </svg>
+             <div id="text">
+                 <a href="welcome.html"><span class="spot"></span>Let's Go</a>
+             </div>
+          </div>
+        </div>
+      </div>
+
     </article>
     <aside class="aside aside1">
-      <h1>ALREADY A MEMBER?</h1><br>
-            <div id="workarea">
+      <br><br>
+      <h1>ALREADY A MEMBER?</h1><br><br>
+              <form>
+                <input type="text" name="username" placeholder="Username" />
+                <br><br>
+                <input type="password" name="pass" placeholder="Password" />
+              </form>
+              <br><br>
+            <div id="workarea2">
               <div class="position">
                 <div class="svg-wrapper">
                   <svg height="40" width="150">
-                    <rect id="shape" height="40" width="150" />
-                    <div id="text">
-                      <a href="welcome.html"><span class="spot"></span>SIGN IN</a>
-                    </div>
+                    <rect id="shape2" height="40" width="150" />
                   </svg>
+                    <div id="text2">
+                       <a href="welcome.html"><span class="spot"></span>SIGN IN</a>
+                    </div>
                 </div>
               </div>
             </div>
     </aside>
     <aside class="aside aside2">
       
-      <img class="vr-girl" src="https://cdn.discordapp.com/attachments/749985626933166155/765653885712728064/vr-girl.jpg" alt="img missing">
     </aside>
-    <footer class="footer">
-      <li class="nav-link">
-        <a href="contact.html">CONTACT </a>
-      </li>
-    </footer>
+      <footer class="footer">
+        <a class="nav-link" href="contact.html">CONTACT </a>
+      </footer>
 </body>
 
 </html>

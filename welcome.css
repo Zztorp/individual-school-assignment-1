@@ -25,7 +25,6 @@ header {
   position: relative;
 }
 nav {
-  flex-direction: ;
   display: flex;
   justify-content: space-between;
   width: 98%;
@@ -51,6 +50,10 @@ nav {
 .logo {
   text-align: left;
   width: 500px;
+}
+.home-logo {
+  height: 80px;
+  width: 80px;
 }
 .header {
   height: 200px;
@@ -150,5 +153,17 @@ nav {
   .nav-links {
     margin-top: 0vh;
     flex-shrink: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.logo {
+    display: none;
+  }
+  .header nav {
+    justify-content: center;
+    height: 90px;
+    margin-top: 30px;
+    padding: 70px;
   }
 }
