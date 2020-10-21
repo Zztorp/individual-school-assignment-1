@@ -4,7 +4,6 @@
   padding: 0px;
   box-sizing: border-box; /*För responsivitet*/
   list-style: none;
-  color: ghostwhite;
 }
 body {
   font-family: Orbitron;
@@ -12,6 +11,7 @@ body {
   background-image: url("https://cdn.discordapp.com/attachments/749985626933166155/758039874241822760/pinkNblue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: ghostwhite;
 }
 h1 {
   text-align: center;
@@ -30,6 +30,10 @@ nav {
   width: 98%;
   margin: auto; /*Så att du får lika mycket space på höger o vänster sida i nav*/
 }
+a {
+  color: ghostwhite;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -110,7 +114,8 @@ nav {
 }
 
 #shape,
-#shape2 {
+#shape2,
+.button {
   stroke-width: 3px;
   fill: transparent;
   stroke: #082f70;

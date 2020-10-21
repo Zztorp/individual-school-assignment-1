@@ -65,18 +65,20 @@ nav {
 }
 
 .article {
-  text-align: left;
+  text-align: center;
   background: rgba(44, 62, 80, 0.7);
   height: 300px;
   font-size: 24px;
 }
 
 .aside1 {
-  background: rgba(44, 62, 80, 0.7);
 }
 
 .aside2 {
-  background: rgba(44, 62, 80, 0.7);
+}
+
+#open-logo {
+  height: 250px;
 }
 .chatbot textarea {
   color: black;

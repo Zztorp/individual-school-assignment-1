@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="join.css" />
   <link rel="icon" href="https://cdn.discordapp.com/attachments/749985626933166155/760512455817691196/3e101abe-c298-44bf-8b83-f285962f8055_200x200.png">
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
   <title>Join</title>
 </head>
 
@@ -34,6 +34,7 @@
         </ul>
       </nav>
     </header>
+
     <article class="article">
        <h2>JOIN</h2>
        <p>
@@ -41,14 +42,47 @@
         the opportunity to enter awesome worlds. Sign up and Open the door to a new world.
         </p>
         <br>
+        <div id="error"></div>
+        <form id="form" action="/" method="get">
+          <div>
+            <input id="name" name="name"type="text" placeholder="Username">
+          </div>
+          <div>
+            <input id="email" name="email" type="email" placeholder="Email">
+          </div>
+          <div>
+            <input id="password" name="password" type="password" placeholder="Password">
+          </div>
+          <br> <br>
+            <div id="workarea">
+              <div class="position">
+                <div class="svg-wrapper">
+                  <svg height="40" width="150">
+                    <rect id="shape" height="40" width="150" />
+                  </svg>
+                  <div id="text">
+                    <!--<a  href="welcome.html">SIGN UP</a>
+                    <br> <br> <br>-->
+                    <input id="submit" name="submit" type="submit" value="SIGN UP" formaction="/welcome.html">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+
+
+
+
+
+        <!--
         <div class="join-container">
-        <form>
-          <input type="text" name="username" placeholder="Username" />
+        <form id="form" action="/" method="GET">
+          <input id="name" type="text" name="username" placeholder="Username" />
           <br>
-          <input type="email" name="email" placeholder="Email" />
+          <input id="email" type="email" name="email" placeholder="Email" />
           <br>
-          <input type="password" name="pass" placeholder="Password" />                   
-          <!--<a href="welcome.html"><input type="button" value="Sign Up" /></a>-->
+          <input id="password" type="password" name="pass" placeholder="Password" />                   
+          <a href="welcome.html"><input type="button" value="Sign Up" /></a>
         </form>
       </div>
       <br>
@@ -64,7 +98,7 @@
           </div>
         </div>
       </div>
-
+      -->
     </article>
     <aside class="aside aside1">
       <br><br>
